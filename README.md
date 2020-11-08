@@ -20,8 +20,8 @@ symptoms within the past 14 days, nor contact with a person showing symptoms in 
 The only actions required are:
  * The student must input the relevant information into TouroHealthFormData.txt, in the format shown there.
 * In TouroHealthForm.java, the last line can be un-commented out in the method `covidCloseContactPage()` to allow the 
-program to auto-complete the file.  The last line can also be un-commented out in the constructor to auto-close the 
-browser after the form is completed.
+program to auto-complete the file.  The last line can also be un-commented out in the constructor `TouroHeathForm()` 
+to auto-close the browser after the form is completed.
 
 [1]: https://www.selenium.dev/documentation/en/
 [2]: https://www.javatpoint.com/selenium-tutorial
