@@ -1,2 +1,5 @@
 # Project exclude paths
 /target/
+
+# Personal data
+/src/main/java/TouroHealthFormData.txt

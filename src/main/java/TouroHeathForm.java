@@ -38,6 +38,11 @@ public class TouroHeathForm
 //        driver.close(); // close browser
     }
 
+    public static void main(String[] args)
+    {
+        new TouroHeathForm();
+    }
+
     /**
      * Set path and make connection to Firefox driver.  Set timeout time and maximize window.
      */
