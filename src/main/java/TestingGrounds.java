@@ -7,7 +7,7 @@ public class TestingGrounds
     public static void main(String[] args)
     {
         //new TouroHeathForm();
-        TimeJob timeJob = new TimeJob();
+        TimeJob timeJob = new TimeJob(23, 59, 00);
         //timeJob.setStartTime(10, 9, 30);
         timeJob.startJob();
     }
