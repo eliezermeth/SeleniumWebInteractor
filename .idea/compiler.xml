@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SeleniumWebInteractor" target="1.5" />
+      <module name="SeleniumWebInteractor" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

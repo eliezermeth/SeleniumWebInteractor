@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://cloud.typography.com/6966154/6397212/css/fonts.css">
+
+
+
+    <link rel="stylesheet" href="//s2.pluralsight.com/assessments/assets/assessmentsVendor-735e9b861ef32fa47b96.min.css">
+    <link rel="stylesheet" href="//s2.pluralsight.com/assessments/assets/assessmentsCommon-f3cbc3267c9fdca9ee36.min.css">
+    <link rel="stylesheet" href="//s2.pluralsight.com/assessments/assets/validity-49bd6bf1aa060a65401a.min.css">
+        <link rel="stylesheet" href="https://s2.pluralsight.com/prism/prism-bootstrap-18.x.css">
+    <style>
+
+    html body:not(.ps-prism--loaded) #ps-main {
+        /* This is for making sure that new Prism 16+ does not hide the content */
+        /* Prism files are loaded but not used in the test flow */
+        /* This is set to really high important to guarantee we override Prism */
+        opacity: 1 !important;
+        /* Remove padding added by prism when prism isn't loaded */
+        /* TODO: remove this when we refactor validity to not include Prism */
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    </style>
+
+
+
+
+
+
+
+
+    <script src="//assets.adobedtm.com/08e39cddbedb/e636e43250a6/launch-b12e2e8e4ced.min.js"></script>
+
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+      analytics.load("n2LLbFI1MDxFKBLzI0es2Z7PrDhu6jEA");
+      }}();
+    </script>
+
+    <script src="//s2.pluralsight.com/assessments/assets/assessmentsVendor-d21907dd8fdfb54985ac.min.js"></script>
+    <script src="//s2.pluralsight.com/assessments/assets/assessmentsCommon-8dc25a4baacd2703c758.min.js"></script>
+    <script src="//s2.pluralsight.com/assessments/assets/validity-79861c1722f9703cb4a1.min.js"></script>
+        <script type="text/javascript" src="https://s2.pluralsight.com/prism/prism-bootstrap-18.x.js"></script>
+        <script type="text/javascript" src="https://s2.pluralsight.com/communications/notifications.js"></script>
+
+
+
+        <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"2700af8a3c",applicationID:"134716708"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+        <title>
+            Assessments | Pluralsight
+        </title>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+    <body>
+        <div id="wrapper" class="wrapper" style="height: 100%;">
+
+
+
+
+
+
+
+<div id='ps-container'>
+    <div id="ps-chrome"></div>
+    <div id="ps-notifications"></div>
+    <main id="ps-main" tabindex="0">
+    </main>
+    <div id="ps-footer"></div>
+</div>
+<div id="modal-root"></div>
+
+<script type='text/javascript'>
+    var bootstrap_data = {"user_assessment_session_state": "question", "mode": "skill-assessment", "assessment": "c-sharp", "assessment_uuid": "03a98143-dde9-4634-af93-1da684e9d0ea", "state": "Live", "title": "C#", "author_name": "", "exit_url_params": {"context": "paths", "path_type": "skill", "path_url": "csharp"}, "exit_url": "/paths/skills/csharp", "home_url": "/library", "query_string": "?context=paths&path_type=skill&path_url=csharp&retake", "query_string_context": "paths", "environment": "production", "user_data": {"display_first_name": "Anony", "display_name": "Anony Mous", "username": "anony-mous-fc", "email": "fqn66715@eoopy.com", "handle": "3be13305-2075-4a9e-abbb-e6973c434851"}, "client_sentry_url": "https://499e380d7dce4517aac5823738aea4fc@sentry.io/205100", "version_number": "2021.1.1964.973088|77ffe10fea1c", "current_run_uuid": "941ba2fb-3b14-40a2-8aa7-b41135ae83dd", "is_experimental_remeasurement": false, "path_title": "C# Development Fundamentals", "path_slug": "csharp", "cohort": "B", "social_landing_url": "https://learn.pluralsight.com/programs/skills", "feature_flags": {"skill-iq-assesment-engine-api": false, "skill-iq-onboarding-messaging-v2": "Inactive", "ase-question-selection-cutover-get": false, "question-selection-cutover": true, "skill-iq-flow-user-testing": false, "psds2020Colors": true}, "is_assessment_path_coming_soon": false, "role_uuid": null, "role_title": null, "show_prism": false, "prism_payload": {"claims": [], "planId": null, "libraries": ["free"], "planAuthz": {"plans": [], "cacheUntil": "2021-01-12T20:18:54.5638726+00:00", "userHandle": "3be13305-2075-4a9e-abbb-e6973c434851", "allPlansAuthz": {"canViewLogs": false, "canViewPeople": false, "canInviteUsers": false, "canViewAccount": false, "canViewBilling": false, "canViewAllUsers": false, "canViewSettings": false, "canViewAnalytics": false, "canViewDashboard": false, "canViewPriorities": false, "canViewCustomRoleIq": false}}, "userHandle": "3be13305-2075-4a9e-abbb-e6973c434851", "hasExternalMentoring": false, "hasInternalMentoring": false}, "launch_darkly_client_id": "5a7c7b5afd95332db01686a1", "timed_session": true, "image_intensive": false, "measurement_type": "Full Run", "is_replacement_session": false, "remeasurement_reason": null, "retake_types": []}
+    renderValidity(bootstrap_data,'ps-main')
+</script>
+
+            <div id="push" class="push"></div>
+        </div>
+
+        <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"2700af8a3c","applicationID":"134716708","transactionName":"Z1ZRN0EDCEMDABVYWl4cdRZdARJZDQ1OcEZDVkAQXgcIRDICBlR2X11HEVwOClUQWRJZWkdsUhBABxVDDwYPRQ==","queueTime":0,"applicationTime":1046,"agent":""}</script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'61015d998e78f10e',m:'5c5d159e8a192217b55cd354cc8707f3ae308b73-1610396713-1800-AaTuHtcrViTDP+yVA8RRlaCrLtm+JSNmoLG2QPTJjVsLpxUOCZDKobWXKa9797B6CnMVlV2ZyK47RN90NH5h9IXgp8HME9vIydy8ey8q4DMIEN5uwT/P3m1+f+YsRLRsEXVrkWFLhDUmRqdUc8NWPECeaYfv/K9uE7AkQnE7JQzLuEKxTydBbTJjDz0qwZy+OIx/gBiGhQpNsXi7zbOBdjfzZIsYzXqEijyx7A8dgenY',s:[0xc3564c3fb8,0x4409fe1479],}})();</script></body>
+</html>

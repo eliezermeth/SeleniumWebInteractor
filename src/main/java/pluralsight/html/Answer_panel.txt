@@ -1,0 +1,33 @@
+After, to see what correct answer:
+<ul class="answeredChoices__2W_sz choiceList__1d6wg" aria-label="choices" role="region">
+    <li class="textChoice__9fb1L textChoiceKey__3Tj85">
+        <p class="screenReaderText__2JzCY">Correct - </p>
+        <div>
+            <p>The purpose of an abstract class is to provide a common definition of a base class that multiple derived classes can share.</p>
+        </div>
+    </li>
+    <li class="textChoice__9fb1L textChoiceDistractorAnswered__1BUmM" tabindex="-1">
+        <p class="screenReaderText__2JzCY">Your choice: incorrect - </p>
+        <div>
+            <p>An abstract class can be instantiated and does not require a derived class creation. &nbsp;</p>
+        </div>
+    </li>
+    <li class="textChoice__9fb1L">
+        <p class="screenReaderText__2JzCY">Incorrect - </p>
+        <div>
+            <p>Derived classes of an abstract class do not need to implement all abstract methods.&nbsp;</p>
+        </div>
+    </li>
+    <li class="textChoice__9fb1L">
+        <p class="screenReaderText__2JzCY">Incorrect - </p>
+        <div>
+            <p>A class inheriting an abstract method may access the original implementation of the method.&nbsp;</p>
+        </div>
+    </li>
+    <li class="textChoice__9fb1L">
+        <p class="screenReaderText__2JzCY">Incorrect - </p>
+            <div>
+            <p>I don't know yet.</p>
+        </div>
+    </li>
+</ul>

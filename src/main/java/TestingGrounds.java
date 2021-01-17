@@ -1,14 +1,22 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import Utilities.DriverUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.*;
 
 public class TestingGrounds
 {
     public static void main(String[] args)
     {
-        //new TouroHeathForm();
-        TimeJob timeJob = new TimeJob(23, 59, 00);
-        //timeJob.setStartTime(10, 9, 30);
-        timeJob.startJob();
+        String config = "about:config";
+        String stackoverflow = "https://stackoverflow.com";
+        Map<String, String> map = new HashMap<>();
+
+        WebDriver driver = DriverUtils.getDriver();
+        DriverUtils.enablePropertyAccess();
+        DriverUtils.disablePropertyAccess();
     }
 }
