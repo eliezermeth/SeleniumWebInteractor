@@ -11,7 +11,7 @@ This program requires GeckoDriver.  All programs are currently made to run with 
   The most recent GeckoDriver release for Mozilla can be found by searching
 "github mozilla geckodriver releases" or by clicking [here][5].<p>
 The file should be unzipped into the main directory of the desktop, so the file path
-to the executable is "C:\\GeckoDriver\\geckodriver.exe".
+to the executable is "C:\\SeleniumDrivers\\geckodriver.exe".
 
 **For use of TouroHealthForm**<p>
 The Java class is currently programmed to input information into the [Touro COVID health form][6].  It assumes the

@@ -23,7 +23,7 @@ public class DriverOperations
     {
         if (driver == null)
         {
-            System.setProperty("webdriver.gecko.driver", "C:\\GeckoDriver\\geckodriver.exe"); // setting the driver executable
+            System.setProperty("webdriver.gecko.driver", "C:\\SeleniumDrivers\\geckodriver.exe"); // setting the driver executable
             driver = new FirefoxDriver(); // initializing the Firefox driver
 
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); // applied wait time

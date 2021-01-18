@@ -1,5 +1,6 @@
 package pluralsight;
 
+import Utilities.DriverOperations;
 import Utilities.DriverUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,9 +21,9 @@ public class GetNewEmail
     public static String getNewEmail()
     {
         if (driver == null)
-            driver = DriverUtils.getDriver();
+            driver = DriverOperations.getFirefoxDriver();
 
-        DriverUtils.goToTab(URL_10minuteemail);
+        DriverOperations.goToTab(URL_10minuteemail);
 
         if (email != null) // email was invalid
             driver.findElement(By.linkText(" Get another e-mail address.(Current E-mail will expire.)")).click();
